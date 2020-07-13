@@ -1,2 +1,2 @@
 # AndruBlog
-一个基于 hexo next 主题的页面模板
+一个基于hexo的next主题简洁的页面模板。
