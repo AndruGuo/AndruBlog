@@ -6,17 +6,15 @@
 title: Andru.Live
 subtitle: '记录、分享、交流'
 description: ' 日拱一卒，功不唐捐 '
-keywords: 'Java,Python,Linux,CentOS,Ubuntu,个人成长'
+keywords:
 author: Andru
 language: zh-CN
 timezone: ''
 
 # URL
-## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://andru.live
-root: /
-permalink: :category/:title/
-#permalink: :year/:month/:day/:title/
+## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
+url: http://example.com
+permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -29,8 +27,8 @@ tag_dir: tags
 archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
-i18n_dir: lang
-skip_render: README.md
+i18n_dir: :lang
+skip_render:
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -42,16 +40,20 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: true
+post_asset_folder: false
 relative_link: false
 future: true
+syntax_highlighter: highlight.js
 highlight:
-  enable: true
   line_number: true
   auto_detect: false
   tab_replace: ''
   wrap: true
   hljs: false
+prismjs:
+  preprocess: true
+  line_number: true
+  tab_replace: ''
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -59,7 +61,7 @@ highlight:
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ''
-  per_page: 20
+  per_page: 10
   order_by: -date
 
 # Category & Tag
@@ -77,8 +79,8 @@ meta_generator: true
 ## http://momentjs.com/docs/#/displaying/format/
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
-## Use post's date for updated date unless set in front-matter
-use_date_for_updated: false
+## updated_option supports 'mtime', 'date', 'empty'
+updated_option: 'mtime'
 
 # Pagination
 ## Set per_page to 0 to disable pagination
@@ -97,39 +99,8 @@ ignore:
 theme: next
 
 # Deployment
-## Docs: https://hexo.io/docs/deployment.html
+## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/AndruGuo/andruguo.github.io.git
-  branch: master
-
-# Search  搜索页面
-search:
-  path: search.xml
-  field: post
-  format: html
-  limit: 10000
-
-# 设置博客单词统计
-symbols_count_time:
-  # 文章字数统计
-  symbols: true
-  # 文章阅读时间统计
-  time: true
-  # 站点总字数统计
-  total_symbols: true
-  # 站点总阅读时间统计
-  total_time: true
-  # 平均字长
-  awl: 4
-  # 每分钟阅读字数
-  wpm: 275
-
-# 插件百度 谷歌爬虫规则
-Plugins:
-  - hexo-generator-baidu-sitemap
-  - hexo-generator-sitemap
-baidusitemap:
-  path: baidusitemap.xml
-sitemap:
-  path: sitemap.xml
+  repo: https://github.com/AndruGuo/AndruBlog.git
+  branch: gh-pages
