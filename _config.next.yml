@@ -1,0 +1,43 @@
+# ---------------------------------------------------------------
+# NexT 主题配置（最小原版，与线上部署一致）
+# ---------------------------------------------------------------
+scheme: Muse
+darkmode: false
+
+# 页脚
+footer:
+  since: 2020
+  powered: false
+
+# 侧栏
+sidebar:
+  position: left
+
+# 头像（关闭）
+avatar: null
+
+# 菜单
+menu:
+  home: / || fa fa-home
+  categories: /categories/ || fa fa-th
+  archives: /archives/ || fa fa-archive
+  tags: /tags/ || fa fa-tags
+menu_icons:
+  enable: true
+
+# 字数统计（关闭，避免依赖 hexo-wordcount）
+symbols_count_time:
+  symbols: false
+  time: false
+  total_symbols: false
+  total_time: false
+  awl: 4
+  wpm: 275
+
+# 本地搜索
+local_search:
+  enable: true
+
+# 目录
+toc:
+  enable: true
