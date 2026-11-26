@@ -4,6 +4,11 @@
 scheme: Muse
 darkmode: false
 
+# 主题色（NexT 必需，缺失会导致 main.css 编译为空）
+theme_color:
+  light: "#222"
+  dark: "#222"
+
 # 页脚
 footer:
   since: 2020
@@ -14,7 +19,7 @@ sidebar:
   position: left
 
 # 头像（关闭）
-avatar: null
+avatar: false
 
 # 菜单
 menu:
