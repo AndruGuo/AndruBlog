@@ -133,3 +133,9 @@ baidusitemap:
   path: baidusitemap.xml
 sitemap:
   path: sitemap.xml
+
+# RSS（SEO）
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
