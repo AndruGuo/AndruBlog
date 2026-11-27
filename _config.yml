@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://andru.live
+url: https://blog.andru.de5.net
 root: /
 permalink: :category/:title/
 #permalink: :year/:month/:day/:title/
