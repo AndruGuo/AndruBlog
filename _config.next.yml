@@ -2,7 +2,7 @@
 # NexT 主题配置（最小原版，与线上部署一致）
 # ---------------------------------------------------------------
 scheme: Muse
-darkmode: false
+darkmode: true
 
 # 主题色（NexT 必需，缺失会导致 main.css 编译为空）
 theme_color:
@@ -24,6 +24,7 @@ avatar: false
 # 菜单
 menu:
   home: / || fa fa-home
+  RSS: /atom.xml || fa fa-rss
   categories: /categories/ || fa fa-th
   archives: /archives/ || fa fa-archive
   tags: /tags/ || fa fa-tags
@@ -45,4 +46,26 @@ local_search:
 
 # 目录
 toc:
+  enable: true
+
+# 代码块复制按钮
+codeblock:
+  copy_button:
+    enable: true
+
+# 返回顶部
+back2top:
+  enable: true
+
+# 图片点击放大
+mediumzoom: true
+
+# 阅读进度条
+reading_progress:
+  enable: true
+
+# 侧栏社交链接
+social:
+  GitHub: https://github.com/AndruGuo || fab fa-github
+social_icons:
   enable: true
