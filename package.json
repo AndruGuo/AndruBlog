@@ -31,5 +31,10 @@
     "hexo-util": "^4.0.0",
     "js-yaml": "^5.5.0",
     "save-dev": "0.0.1-security"
+  },
+  "overrides": {
+    "hexo-symbols-count-time": {
+      "hexo-util": "^4.0.0"
+    }
   }
 }
